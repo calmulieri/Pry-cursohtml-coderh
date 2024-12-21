@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Ajusta proporcionalemnte padding y margenes al cambiar de tamaño los elementos */
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+header {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(124, 3, 3);
+}
+
+header nav div h1 {
+    width: 60;
+    color: rgb(0, 72, 3);
+    font-size: 2rem;
+}
+
+header nav ul {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around
+}
+
+header nav .milogo {
+    width: 70px;
+    height: 70px;
+}
+
+header nav ul li a {
+    color: cadetblue;
+    font-size: 12px;
+}
+
+.opciones {
+    text-align: center;
+}
+
+.nutrirse {
+    background-color: cadetblue;
+    text-align: center;
+    color: bisque;
+
+}
+
+.nutrirse div img {
+    width: 100vw;
+}
+
+body main .animate {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    /*margin-top: 1rem;*/
+    color: cadetblue;
+    font-size: 1.5rem;
+
+}
+body main .animate .tith2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+body main .animate .titresto{
+    display: flex;
+    flex-direction: row;
+    /*width: vw100;*/
+    justify-content: space-around
+
+}
+body main .titulo-opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height:3.5rem;
+    background-color:rgb(203, 223, 203);
+    font-size: 1rem;
+    color:cadetblue;
+    margin-top: 0.5rem;
+    
+}
+body main .opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 0.5rem;
+
+}
+body main .opciones div img{
+    width: 370px;
+    height: 300px;
+}
+
+
+footer {
+    background-color: antiquewhite;
+    height: 100px;
+    border-top: 1px solid rgb(124, 3, 3);
+}
+
+footer a .misredes {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+
+}
+
+footer a .miwhsap {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+
+}
