@@ -105,9 +105,51 @@ body main .opciones{
 
 }
 body main .opciones div img{
+    
     width: 370px;
     height: 300px;
 }
+
+body main .galeria-notas{
+    display: grid;
+    margin-top: 1rem;
+    margin-left: 25%;
+    width: 50%;
+    height: 100%;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 0.5rem;
+}
+
+body main .galeria-notas .item-nota{
+    
+    border: 2px solid rgb(75, 11, 11);
+   
+
+}
+body main .galeria-notas .item-nota img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+
+}
+body main .tit-info-interes{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height:3.5rem;
+    background-color:rgb(203, 223, 203);
+    font-size: 1rem;
+    color:cadetblue;
+    /*margin-top: 0.5rem;*/
+}
+
+    
+    
+
 
 
 footer {
