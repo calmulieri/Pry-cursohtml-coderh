@@ -7,151 +7,200 @@
     text-decoration: none;
 }
 
-
-
-header {
+body header {
     background-color: antiquewhite;
     position: sticky;
     top: 0;
-
 }
 
-header nav {
+body header nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(124, 3, 3);
+    justify-content: space-evenly
 }
 
-header nav div h1 {
-    width: 60;
+body header nav div {
+    width: 60%;
+}
+
+body header nav div h1 {
     color: rgb(0, 72, 3);
+    text-align: center;
     font-size: 2rem;
 }
 
-header nav ul {
-    width: 20%;
+body header nav ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-between
 }
 
-header nav .milogo {
+body header nav .milogo {
     width: 70px;
     height: 70px;
 }
 
-header nav ul li a {
+body header nav ul li a {
     color: cadetblue;
     font-size: 12px;
 }
 
-.opciones {
-    text-align: center;
-}
+/*body main .opciones {
+    
+}*/
 
-.nutrirse {
+body main .nutrirse {
+    display: flex;
+    flex-direction: column;
     background-color: cadetblue;
     text-align: center;
     color: bisque;
-
 }
 
-.nutrirse div img {
-    width: 100vw;
+body main .nutrirse h2 {
+    font-size: 1.5rem;
+}
+
+body main .nutrirse p {
+    font-size: 1rem;
+}
+
+body main .nutrirse div {
+    border-top: 1px solid rgb(124, 3, 3);
+}
+
+body main .nutrirse div img {
+    width: 100%;
+    object-fit: cover;
 }
 
 body main .animate {
     display: flex;
     flex-direction: column;
     background-color: antiquewhite;
-    /*margin-top: 1rem;*/
     color: cadetblue;
     font-size: 1.5rem;
 
 }
-body main .animate .tith2{
+
+body main .animate .tith2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
 }
-body main .animate .titresto{
-    display: flex;
-    flex-direction: row;
-    /*width: vw100;*/
-    justify-content: space-around
 
-}
-body main .titulo-opciones{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    height:3.5rem;
-    background-color:rgb(203, 223, 203);
-    font-size: 1rem;
-    color:cadetblue;
-    margin-top: 0.5rem;
-    
-}
-body main .opciones{
+body main .animate .titresto {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+body main .titulo-opciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    background-color: rgb(203, 223, 203);
+    font-size: 1rem;
+    color: cadetblue;
     margin-top: 0.5rem;
 
 }
-body main .opciones div img{
-    
-    width: 370px;
-    height: 300px;
-}
 
-body main .galeria-notas{
-    display: grid;
-    margin-top: 1rem;
-    margin-left: 25%;
-    width: 50%;
-    height: 100%;
-    
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
-    gap: 0.5rem;
-}
-
-body main .galeria-notas .item-nota{
-    
-    border: 2px solid rgb(75, 11, 11);
-   
-
-}
-body main .galeria-notas .item-nota img{
-    width: 100%;
-    height:100%;
-    object-fit: cover;
-
-}
-body main .tit-info-interes{
-
+body main .opciones {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: space-around;
     align-items: center;
-    height:3.5rem;
-    background-color:rgb(203, 223, 203);
-    font-size: 1rem;
-    color:cadetblue;
-    /*margin-top: 0.5rem;*/
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+
 }
 
-    
-    
+body main .opciones div {
+    display: flex;
+    flex-direction: column;
+}
 
+body main .opciones div img {
+    width: 370px;
+    height: 340px;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
 
+body main .opciones .btn btn-success {
+    margin-top: 15px;
+}
 
+/* css page mi lugar */
+body main .galeria-notas {
+    display: grid;
+    margin-top: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    height: 100%;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+body main .galeria-notas .item-nota img {
+    width: 300px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
+
+body main .galeria-notas .item-nota h3 {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(95, 158, 160, 0.701);
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 100%;
+    font-style: italic;
+
+}
+
+body main .tit-info-interes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    background-color: cadetblue;
+    text-align: center;
+    color: bisque;
+    flex-wrap: wrap;
+}
+
+body main .tit-info-interes h2 {
+    font-size: 1.5rem;
+}
+
+body main .tit-info-interes p {
+    font-size: 1rem
+}
+
+/* css footer */
 footer {
     background-color: antiquewhite;
     height: 100px;
@@ -173,4 +222,183 @@ footer a .miwhsap {
     width: 60px;
     height: 60px;
 
+}
+
+/* formatos responsive */
+@media screen and (max-width:900px) {
+
+    body main .galeria-notas .item-nota img {
+        width: 250px;
+        height: auto;
+
+    }
+
+    body main .galeria-notas .item-nota h3 {
+
+        font-size: 0.9rem;
+
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    body main .galeria-notas .item-nota img {
+        width: 200px;
+        height: auto;
+
+    }
+
+    body main .galeria-notas .item-nota h3 {
+
+        font-size: 0.7rem;
+
+    }
+}
+
+@media screen and (max-width:675px) {
+    body header nav div h1 {
+        font-size: 1.5rem;
+    }
+
+    body header nav ul li a {
+        color: cadetblue;
+        font-size: 10px;
+    }
+
+    body header nav .milogo {
+        width: 60px;
+        height: 60px;
+    }
+
+    body main .animate {
+        display: flex;
+        flex-direction: column;
+        background-color: antiquewhite;
+        color: cadetblue;
+        font-size: 1rem;
+
+    }
+
+    body main .animate .tith2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    body main .animate .titresto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+
+    }
+
+    body main .nutrirse h2 {
+        font-size: 1rem;
+    }
+
+    body main .nutrirse p {
+        font-size: 0.5rem;
+    }
+
+    body main .tit-info-interes {
+        height: 3rem;
+        background-color: cadetblue;
+        text-align: center;
+        color: bisque;
+        font-size: 1rem;
+
+    }
+
+    body main .tit-info-interes h2 {
+        font-size: 1rem;
+    }
+
+    body main .tit-info-interes p {
+        font-size: 0.5rem
+    }
+
+    body main .galeria-notas {
+        margin-top: 0.5rem;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        height: 100%;
+
+        /*grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0.5rem;*/
+    }
+
+    body main .galeria-notas .item-nota img {
+        width: 200px;
+        height: auto;
+    }
+
+    body main .galeria-notas .item-nota h3 {
+
+        font-size: 0.7rem;
+
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    body header nav div h1 {
+        font-size: 1rem;
+    }
+
+    body header nav ul li a {
+        font-size: 8px;
+    }
+
+    body main .opciones div img {
+        width: 320px;
+        height: 300;
+        object-fit: cover;
+        flex-wrap: wrap;
+    }
+
+    body main .galeria-notas .item-nota img {
+        width: 180px;
+        height: auto;
+    }
+
+    body main .galeria-notas {
+        margin-top: 0.5rem;
+        /*grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;*/
+        gap: 0rem;
+    }
+
+    body main .galeria-notas .item-nota h3 {
+
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body header nav div {
+        width: 50%;
+    }
+
+    body header nav div h1 {
+        font-size: 0.8rem;
+    }
+
+    body header nav ul li a {
+        font-size: 8px;
+    }
+
+    body main .galeria-notas .item-nota img {
+        width: 150px;
+        height: auto;
+    }
+
+    body main .galeria-notas .item-nota h3 {
+
+        font-size: 0.4rem;
+    }
 }
