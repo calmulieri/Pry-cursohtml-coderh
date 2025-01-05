@@ -17,7 +17,7 @@ body header nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 body header nav div {
@@ -34,7 +34,7 @@ body header nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 body header nav .milogo {
@@ -197,7 +197,7 @@ body main .tit-info-interes h2 {
 }
 
 body main .tit-info-interes p {
-    font-size: 1rem
+    font-size: 1rem;
 }
 
 /* css footer */
@@ -317,7 +317,7 @@ body footer a .miwhsap {
     }
 
     body main .tit-info-interes p {
-        font-size: 0.5rem
+        font-size: 0.5rem;
     }
 
     body main .galeria-notas {
