@@ -47,10 +47,6 @@ body header nav ul li a {
     font-size: 12px;
 }
 
-/*body main .opciones {
-    
-}*/
-
 body main .nutrirse {
     display: flex;
     flex-direction: column;
@@ -234,7 +230,6 @@ body footer a .miwhsap {
     }
 
     body main .galeria-notas .item-nota h3 {
-
         font-size: 0.9rem;
 
     }
@@ -249,7 +244,6 @@ body footer a .miwhsap {
     }
 
     body main .galeria-notas .item-nota h3 {
-
         font-size: 0.7rem;
 
     }
@@ -294,7 +288,6 @@ body footer a .miwhsap {
         flex-wrap: wrap;
 
     }
-
     body main .nutrirse h2 {
         font-size: 1rem;
     }
@@ -302,7 +295,6 @@ body footer a .miwhsap {
     body main .nutrirse p {
         font-size: 0.5rem;
     }
-
     body main .tit-info-interes {
         height: 3rem;
         background-color: cadetblue;
@@ -326,10 +318,7 @@ body footer a .miwhsap {
         margin-right: 0%;
         width: 100%;
         height: 100%;
-
-        /*grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0.5rem;*/
+        gap: 0.5rem;
     }
 
     body main .galeria-notas .item-nota img {
@@ -338,7 +327,6 @@ body footer a .miwhsap {
     }
 
     body main .galeria-notas .item-nota h3 {
-
         font-size: 0.7rem;
 
     }
@@ -374,7 +362,6 @@ body footer a .miwhsap {
     }
 
     body main .galeria-notas .item-nota h3 {
-
         font-size: 0.5rem;
     }
 }
@@ -398,7 +385,6 @@ body footer a .miwhsap {
     }
 
     body main .galeria-notas .item-nota h3 {
-
         font-size: 0.4rem;
     }
 }
