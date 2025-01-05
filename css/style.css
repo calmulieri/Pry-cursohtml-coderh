@@ -201,13 +201,13 @@ body main .tit-info-interes p {
 }
 
 /* css footer */
-footer {
+body footer {
     background-color: antiquewhite;
     height: 100px;
     border-top: 1px solid rgb(124, 3, 3);
 }
 
-footer a .misredes {
+body footer a .misredes {
     margin-top: 20px;
     margin-left: 20px;
     width: 40px;
@@ -215,7 +215,7 @@ footer a .misredes {
 
 }
 
-footer a .miwhsap {
+body footer a .miwhsap {
     position: fixed;
     bottom: 10px;
     right: 10px;
