@@ -98,12 +98,12 @@ body main .animate .titresto {
     text-align: center;
 }
 
-body main .tit-info-interes {
+/*body main .tit-info-interes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
-}
+*/
 
 body main .titulo-opciones {
     display: flex;
@@ -182,7 +182,6 @@ body main .galeria-notas .item-nota h3 {
     font-style: italic;
 
 }
-
 body main .tit-info-interes {
     display: flex;
     flex-direction: column;
