@@ -9,81 +9,80 @@
   text-decoration: none;
 }
 
-/* Inicia header */
-header {
+body header {
   background-color: antiquewhite;
   position: sticky;
   top: 0;
 }
-header nav {
+body header nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
-header nav .milogo {
+body header nav .milogo {
   width: 70px;
   height: 70px;
 }
-header nav div {
+body header nav div {
   width: 60%;
 }
-header nav div h1 {
+body header nav div h1 {
   color: rgb(0, 72, 3);
   text-align: center;
   font-size: 2rem;
 }
-header nav ul {
+body header nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-header nav ul li a {
+body header nav ul li a {
   color: cadetblue;
   font-size: 12px;
 }
 
 /* Inicia main */
-main {
+body main {
   /* Page misopciones */
   /* page milugar */
 }
-main .nutrirse {
+body main .nutrirse {
   display: flex;
   flex-direction: column;
   background-color: cadetblue;
   text-align: center;
   color: bisque;
 }
-main .nutrirse h2 {
+body main .nutrirse h2 {
   font-size: 1.5rem;
 }
-main .nutrirse p {
+body main .nutrirse p {
   font-size: 1rem;
 }
-main .nutrirse div {
+body main .nutrirse div {
   border-top: 1px solid rgb(124, 3, 3);
 }
-main .nutrirse div img {
+body main .nutrirse div img {
   width: 100%;
   object-fit: cover;
 }
-main .animate {
+body main .animate {
   display: flex;
   flex-direction: column;
   background-color: antiquewhite;
   color: cadetblue;
   font-size: 1.5rem;
 }
-main .animate .tith2 {
+body main .animate .tith2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 1.5rem;
   text-align: center;
 }
-main .animate .titresto {
+body main .animate .titresto {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -91,7 +90,7 @@ main .animate .titresto {
   font-size: 1.5rem;
   text-align: center;
 }
-main .titulo-opciones {
+body main .titulo-opciones {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -102,7 +101,7 @@ main .titulo-opciones {
   color: cadetblue;
   margin-top: 0.5rem;
 }
-main .opciones {
+body main .opciones {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -110,20 +109,20 @@ main .opciones {
   margin-top: 0.5rem;
   flex-wrap: wrap;
 }
-main .opciones div {
+body main .opciones div {
   display: flex;
   flex-direction: column;
 }
-main .opciones div img {
+body main .opciones div img {
   width: 370px;
   height: 340px;
   object-fit: cover;
   flex-wrap: wrap;
 }
-main .opciones div btn btn-success {
+body main .opciones div btn btn-success {
   margin-top: 15px;
 }
-main .tit-info-interes {
+body main .tit-info-interes {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,7 +133,7 @@ main .tit-info-interes {
   color: bisque;
   flex-wrap: wrap;
 }
-main .galeria-notas {
+body main .galeria-notas {
   display: grid;
   margin-top: 1rem;
   margin-left: 20%;
@@ -146,7 +145,7 @@ main .galeria-notas {
   align-items: center;
   justify-items: center;
 }
-main .galeria-notas .item-nota img {
+body main .galeria-notas .item-nota img {
   width: 300px;
   height: auto;
   border: 1px solid #ddd;
@@ -154,7 +153,7 @@ main .galeria-notas .item-nota img {
   object-fit: cover;
   flex-wrap: wrap;
 }
-main .galeria-notas .item-nota h3 {
+body main .galeria-notas .item-nota h3 {
   width: 100%;
   text-align: center;
   background-color: rgba(95, 158, 160, 0.701);
@@ -167,19 +166,19 @@ main .galeria-notas .item-nota h3 {
   height: 100%;
   font-style: italic;
 }
-main .galeria-contacto {
+body main .galeria-contacto {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-main .galeria-contacto div img {
+body main .galeria-contacto div img {
   width: 100%;
   height: 100%;
   overflow: hidden;
   object-fit: cover;
   flex-wrap: wrap;
 }
-main .galeria-contacto .form-envio {
+body main .galeria-contacto .form-envio {
   background-color: azure;
   border: 1px solid green;
   width: 50%;
@@ -189,7 +188,7 @@ main .galeria-contacto .form-envio {
   justify-content: center;
   flex-wrap: wrap;
 }
-main .galeria-contacto .form-envio mb-3 {
+body main .galeria-contacto .form-envio mb-3 {
   width: 50%;
   Display: flex;
   flex-direction: column;
@@ -197,23 +196,155 @@ main .galeria-contacto .form-envio mb-3 {
   align-items: center;
 }
 /* Inicia footer */
-footer {
+body footer {
   background-color: antiquewhite;
   height: 100px;
   border-top: 1px solid rgb(124, 3, 3);
 }
-footer a .misredes {
+body footer a .misredes {
   margin-top: 20px;
   margin-left: 20px;
   width: 40px;
   height: 40px;
 }
-footer a .miwhsap {
-  position: fixed;
+body footer a .miwhsap {
+  /*position: fixed;*/
   bottom: 10px;
   right: 10px;
   width: 60px;
   height: 60px;
+}
+
+/* formatos responsive  sector medias*/
+@media screen and (max-width: 900px) {
+  body main .galeria-notas .item-nota img {
+    width: 250px;
+    height: auto;
+  }
+  body main .galeria-notas .item-nota h3 {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  body main .galeria-notas .item-nota img {
+    width: 200px;
+    height: auto;
+  }
+  body main .galeria-notas .item-nota h3 {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 675px) {
+  body header nav div h1 {
+    font-size: 1.5rem;
+  }
+  body header nav ul li a {
+    color: cadetblue;
+    font-size: 10px;
+  }
+  body header nav .milogo {
+    width: 60px;
+    height: 60px;
+  }
+  body main .animate {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    color: cadetblue;
+    font-size: 1rem;
+  }
+  body main .animate .tith2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  body main .animate .titresto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+  }
+  body main .nutrirse h2 {
+    font-size: 1rem;
+  }
+  body main .nutrirse p {
+    font-size: 0.5rem;
+  }
+  body main .tit-info-interes {
+    height: 3rem;
+    background-color: cadetblue;
+    text-align: center;
+    color: bisque;
+    font-size: 1rem;
+  }
+  body main .tit-info-interes h2 {
+    font-size: 1rem;
+  }
+  body main .tit-info-interes p {
+    font-size: 0.5rem;
+  }
+  body main .galeria-notas {
+    margin-top: 0.5rem;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    height: 100%;
+    gap: 0.5rem;
+  }
+  body main .galeria-notas .item-nota img {
+    width: 200px;
+    height: auto;
+  }
+  body main .galeria-notas .item-nota h3 {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  body header nav div h1 {
+    font-size: 1rem;
+  }
+  body header nav ul li a {
+    font-size: 8px;
+  }
+  body main .opciones div img {
+    width: 320px;
+    height: 300;
+    object-fit: cover;
+    flex-wrap: wrap;
+  }
+  body main .galeria-notas .item-nota img {
+    width: 180px;
+    height: auto;
+  }
+  body main .galeria-notas {
+    margin-top: 0.5rem;
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;*/
+    gap: 0rem;
+  }
+  body main .galeria-notas .item-nota h3 {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  body header nav div {
+    width: 50%;
+  }
+  body header nav div h1 {
+    font-size: 0.8rem;
+  }
+  body header nav ul li a {
+    font-size: 8px;
+  }
+  body main .galeria-notas .item-nota img {
+    width: 150px;
+    height: auto;
+  }
+  body main .galeria-notas .item-nota h3 {
+    font-size: 0.4rem;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

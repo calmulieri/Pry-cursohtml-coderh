@@ -1,0 +1,170 @@
+/* formatos responsive  sector medias*/
+@media screen and (max-width:900px) {
+
+    body main .galeria-notas .item-nota img {
+        width: 250px;
+        height: auto;
+
+    }
+
+    body main .galeria-notas .item-nota h3 {
+        font-size: 0.9rem;
+
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    body main .galeria-notas .item-nota img {
+        width: 200px;
+        height: auto;
+
+    }
+
+    body main .galeria-notas .item-nota h3 {
+        font-size: 0.7rem;
+
+    }
+}
+
+@media screen and (max-width:675px) {
+    body header nav div h1 {
+        font-size: 1.5rem;
+    }
+
+    body header nav ul li a {
+        color: cadetblue;
+        font-size: 10px;
+    }
+
+    body header nav .milogo {
+        width: 60px;
+        height: 60px;
+    }
+
+    body main .animate {
+        display: flex;
+        flex-direction: column;
+        background-color: antiquewhite;
+        color: cadetblue;
+        font-size: 1rem;
+
+    }
+
+    body main .animate .tith2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    body main .animate .titresto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+
+    }
+
+    body main .nutrirse h2 {
+        font-size: 1rem;
+    }
+
+    body main .nutrirse p {
+        font-size: 0.5rem;
+    }
+
+    body main .tit-info-interes {
+        height: 3rem;
+        background-color: cadetblue;
+        text-align: center;
+        color: bisque;
+        font-size: 1rem;
+
+    }
+
+    body main .tit-info-interes h2 {
+        font-size: 1rem;
+    }
+
+    body main .tit-info-interes p {
+        font-size: 0.5rem;
+    }
+
+    body main .galeria-notas {
+        margin-top: 0.5rem;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        height: 100%;
+        gap: 0.5rem;
+    }
+
+    body main .galeria-notas .item-nota img {
+        width: 200px;
+        height: auto;
+    }
+
+    body main .galeria-notas .item-nota h3 {
+        font-size: 0.7rem;
+
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    body header nav div h1 {
+        font-size: 1rem;
+    }
+
+    body header nav ul li a {
+        font-size: 8px;
+    }
+
+    body main .opciones div img {
+        width: 320px;
+        height: 300;
+        object-fit: cover;
+        flex-wrap: wrap;
+    }
+
+    body main .galeria-notas .item-nota img {
+        width: 180px;
+        height: auto;
+    }
+
+    body main .galeria-notas {
+        margin-top: 0.5rem;
+        /*grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;*/
+        gap: 0rem;
+    }
+
+    body main .galeria-notas .item-nota h3 {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body header nav div {
+        width: 50%;
+    }
+
+    body header nav div h1 {
+        font-size: 0.8rem;
+    }
+
+    body header nav ul li a {
+        font-size: 8px;
+    }
+
+    body main .galeria-notas .item-nota img {
+        width: 150px;
+        height: auto;
+    }
+
+    body main .galeria-notas .item-nota h3 {
+        font-size: 0.4rem;
+    }
+}
