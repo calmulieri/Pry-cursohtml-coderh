@@ -168,11 +168,14 @@ body main .galeria-notas .item-nota h3 {
   height: 100%;
   font-style: italic;
 }
+body main .sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+}
 body main .sobre-nosotros div {
   display: flex;
-  width: 100%;
-  height: 50vh;
   flex-direction: row;
+  height: auto;
 }
 body main .sobre-nosotros div img {
   padding: 1rem;
@@ -182,14 +185,28 @@ body main .sobre-nosotros div img {
   object-fit: cover;
   flex-wrap: wrap;
 }
-body main .sobre-nosotros div h3 {
-  padding: 5rem;
+body main .sobre-nosotros div .nosotros-parrafos {
   width: 50%;
-  border: 1px solid cadetblue;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: center;
+}
+body main .sobre-nosotros div .nosotros-parrafos-ul {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: center;
+}
+body main .sobre-nosotros div .nosotros-parrafos-ul ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+  text-align: left;
+}
+body main .sobre-nosotros div .nosotros-parrafos-ul ul li {
+  font-family: "Georgia", serif;
+  margin-bottom: 15px;
 }
 body main .galeria-contacto {
   width: 100%;
@@ -237,7 +254,7 @@ body footer a .misredes {
   height: 40px;
 }
 body footer a .miwhsap {
-  /*position: fixed;*/
+  position: fixed;
   bottom: 10px;
   right: 10px;
   width: 60px;
@@ -245,6 +262,31 @@ body footer a .miwhsap {
 }
 
 /* formatos responsive  sector medias*/
+@media screen and (max-width: 980px) {
+  body main .sobre-nosotros {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .sobre-nosotros div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: auto;*/
+  }
+  body main .sobre-nosotros img {
+    padding: 0.2rem;
+    width: 100%;
+  }
+  body main .sobre-nosotros div .nosotros-parrafos {
+    width: 100%;
+  }
+  body main .sobre-nosotros div .nosotros-parrafos-ul {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 900px) {
   body main .galeria-notas .item-nota img {
     width: 250px;

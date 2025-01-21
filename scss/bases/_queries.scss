@@ -1,4 +1,31 @@
 /* formatos responsive  sector medias*/
+
+@media screen and (max-width:980px){
+    body main .sobre-nosotros {
+        width: 100vw;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body main .sobre-nosotros div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       /* height: auto;*/
+    }
+    body main .sobre-nosotros img{
+        padding: 0.2rem;
+        width: 100%;
+    }
+    body main .sobre-nosotros div .nosotros-parrafos{
+        width: 100%;
+    }
+    body main .sobre-nosotros div .nosotros-parrafos-ul{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width:900px) {
 
     body main .galeria-notas .item-nota img {
