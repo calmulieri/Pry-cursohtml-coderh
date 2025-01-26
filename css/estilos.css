@@ -42,6 +42,9 @@ body header nav ul li a {
   color: cadetblue;
   font-size: 12px;
 }
+body header nav .btn-outline-success {
+  background-color: cadetblue;
+}
 
 /* Inicia main */
 body main {

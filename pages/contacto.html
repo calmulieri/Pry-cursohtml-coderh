@@ -17,21 +17,57 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#"><img src="../img/logositio.png" class="milogo" alt="Logo"></a> <!--- Defino logo-->
-            <!---*Barra de navegacion -->
-            <div>
-                <h1>Llegaste a un espacio de nutrición saludable</h1>
-            </div>
-            <ul>
-                <li><a href="../index.html">Hogar</a></li>
-                <li><a href="../pages/milugar.html">Mi lugar</a></li>
-                <li><a href="../pages/misopciones.html">Mi nutrición</a></li>
-                <li><a href="../pages/quien.html">Sobre nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contactanos</a></li>
-            </ul>
-        </nav> <!-- fin barra de navegacion -->
+        <!-- Barra de navegacion de boostrap cambio bg-light x bkr-clr-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/logositio.png" class="milogo" alt="logotipo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Hogar</a>
+                            <!-- 3 link agregados a estandar de boostrpa -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/milugar.html">Mi lugar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/misopciones.html">Mi nutrición</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/quien.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mis servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
 
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- fin barra de navegacion -->
     </header>
     <!-- Inicio cuerpo proncipal -->
     <main>
