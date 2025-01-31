@@ -10,7 +10,9 @@
 }
 
 body header {
-  background-color: antiquewhite;
+  /*background-color:antiquewhite;*/
+  background: rgb(228, 194, 147);
+  background: radial-gradient(circle, rgba(228, 194, 147, 0.9809173669) 39%, rgb(250, 235, 215) 80%);
   position: sticky;
   top: 0;
 }
@@ -44,6 +46,8 @@ body header nav ul li a {
 }
 body header nav .btn-outline-success {
   background-color: cadetblue;
+  color: bisque;
+  border: 1px solid rgb(124, 3, 3);
 }
 
 /* Inicia main */
@@ -71,6 +75,7 @@ body main .nutrirse div {
 }
 body main .nutrirse div img {
   width: 100%;
+  height: 20rem;
   object-fit: cover;
 }
 body main .animate {
@@ -138,6 +143,48 @@ body main .tit-info-interes {
   color: bisque;
   flex-wrap: wrap;
 }
+body main .alternativas {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;*/
+  /*gap: 10px;
+  /* Espaciado entre elementos 
+  padding: 5px;*/
+}
+body main .alternativas .item-alternativa-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Centra horizontalmente */
+  /*align-items: center; /* Centra verticalmente */
+  /*padding: 10px;
+  /*max-width: 1200px;
+  /* Para que no sean demasiado anchos */
+  height: 350px;
+  overflow: hidden;
+}
+body main .alternativas .item-alternativa-ul div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+body main .alternativas .item-alternativa-ul div img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  flex-wrap: wrap;
+}
+body main .alternativas .item-alternativa-ul div ul {
+  display: flex;
+  flex-direction: column; /* Asegura que los <li> estén en columna */
+  justify-content: center; /* Centra verticalmente */
+  list-style: none;
+  padding: 10 10px;
+  font-size: 20px;
+  line-height: 2;
+  /* width: 50%;*/
+}
 body main .galeria-notas {
   display: grid;
   margin-top: 1rem;
@@ -174,37 +221,38 @@ body main .galeria-notas .item-nota h3 {
 body main .sobre-nosotros {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body main .sobre-nosotros div {
+  padding: 1.5rem;
   display: flex;
   flex-direction: row;
-  height: auto;
-}
-body main .sobre-nosotros div img {
-  padding: 1rem;
-  width: 50%;
-  height: auto;
-  overflow: hidden;
-  object-fit: cover;
-  flex-wrap: wrap;
+  width: 100% img;
+  width-width: 350px;
+  width-height: 350px;
+  width-overflow: hidden;
+  width-object-fit: cover;
+  width-flex-wrap: wrap;
 }
 body main .sobre-nosotros div .nosotros-parrafos {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
   justify-content: center;
+  /*padding: 3rem;*/
+  /*justify-content: center;*/
 }
 body main .sobre-nosotros div .nosotros-parrafos-ul {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  /*padding: 3rem;*/
   justify-content: center;
 }
 body main .sobre-nosotros div .nosotros-parrafos-ul ul {
   list-style-type: disc;
-  padding-left: 1rem;
+  /*padding-left: 1rem;*/
   text-align: left;
 }
 body main .sobre-nosotros div .nosotros-parrafos-ul ul li {
