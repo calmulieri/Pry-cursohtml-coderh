@@ -51,6 +51,10 @@ body header nav .btn-outline-success {
 }
 
 /* Inicia main */
+body header nav {
+  display: flex;
+  flex-direction: column;
+}
 body main {
   /* Page misopciones */
   /* page milugar */
@@ -75,8 +79,8 @@ body main .nutrirse div {
 }
 body main .nutrirse div img {
   width: 100%;
-  height: 20rem;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 body main .animate {
   display: flex;
@@ -147,21 +151,22 @@ body main .alternativas {
   display: flex;
   flex-direction: column;
   /* align-items: center;
-   justify-content: space-around;
-   flex-wrap: wrap;*/
+  justify-content: space-around;
+  flex-wrap: wrap;*/
   /*gap: 10px;
-  /* Espaciado entre elementos 
-  padding: 5px;*/
+  /* Espaciado entre elementos */
+  padding: 5px;
 }
 body main .alternativas .item-alternativa-ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Centra horizontalmente */
+  justify-content: space-between;
+  /* Centra horizontalmente */
   /*align-items: center; /* Centra verticalmente */
   /*padding: 10px;
   /*max-width: 1200px;
   /* Para que no sean demasiado anchos */
-  height: 350px;
+  height: auto;
   overflow: hidden;
 }
 body main .alternativas .item-alternativa-ul div {
@@ -169,21 +174,32 @@ body main .alternativas .item-alternativa-ul div {
   display: flex;
   justify-content: center;
 }
-body main .alternativas .item-alternativa-ul div img {
-  width: 400px;
-  height: auto;
-  object-fit: cover;
-  flex-wrap: wrap;
-}
 body main .alternativas .item-alternativa-ul div ul {
   display: flex;
-  flex-direction: column; /* Asegura que los <li> estén en columna */
-  justify-content: center; /* Centra verticalmente */
+  flex-direction: column;
+  /* Asegura que los <li> estén en columna */
+  justify-content: center;
+  /* Centra verticalmente */
   list-style: none;
   padding: 10 10px;
   font-size: 20px;
   line-height: 2;
   /* width: 50%;*/
+}
+body main .alternativas .item-alternativa-ul .ebok-boton {
+  Display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+body main .alternativas .item-alternativa-ul .ebok-boton img {
+  height: auto;
+  object-fit: contain;
+  flex-wrap: wrap;
+}
+body main .alternativas .item-alternativa-ul .ebok-boton .btn btn-success {
+  width: 200px;
+  height: auto;
 }
 body main .galeria-notas {
   display: grid;
@@ -228,12 +244,14 @@ body main .sobre-nosotros div {
   padding: 1.5rem;
   display: flex;
   flex-direction: row;
-  width: 100% img;
-  width-width: 350px;
-  width-height: 350px;
-  width-overflow: hidden;
-  width-object-fit: cover;
-  width-flex-wrap: wrap;
+  width: 100%;
+}
+body main .sobre-nosotros div img {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  object-fit: cover;
+  flex-wrap: wrap;
 }
 body main .sobre-nosotros div .nosotros-parrafos {
   width: 50%;
@@ -337,8 +355,22 @@ body footer a .miwhsap {
   body main .sobre-nosotros div .nosotros-parrafos-ul {
     width: 100%;
   }
+  /* Page Mis opciones */
+  body main .alternativas .item-alternativa-ul {
+    height: 300;
+  }
+  body main .alternativas .item-alternativa-ul div ul {
+    font-size: 16px;
+    line-height: 2;
+    /* width: 50%;*/
+  }
 }
 @media screen and (max-width: 900px) {
+  body main .nutrirse div img {
+    /* width: 100%;
+    height: 15rem;
+    object-fit: cover;*/
+  }
   body main .galeria-notas .item-nota img {
     width: 250px;
     height: auto;
@@ -349,7 +381,7 @@ body footer a .miwhsap {
 }
 @media screen and (max-width: 770px) {
   body main .galeria-notas .item-nota img {
-    width: 200px;
+    width: 220px;
     height: auto;
   }
   body main .galeria-notas .item-nota h3 {
@@ -379,6 +411,9 @@ body footer a .miwhsap {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 1rem;
+  }
+  body main .animate .tith2 h2 {
     font-size: 1rem;
   }
   body main .animate .titresto {
@@ -422,8 +457,35 @@ body footer a .miwhsap {
   body main .galeria-notas .item-nota h3 {
     font-size: 0.7rem;
   }
+  /*Pagina Mis  Opciones */
+  body main .alternativas .item-alternativa-ul div ul {
+    font-size: 14px;
+    line-height: 2;
+    /* width: 50%;*/
+  }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 565px) {
+  body main .animate .tith2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.2rem;
+  }
+  body main .animate .titresto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.6rem;
+    flex-wrap: wrap;
+  }
+  /*Pagina Mis  Opciones */
+  body main .alternativas .item-alternativa-ul div ul {
+    font-size: 12px;
+    line-height: 2;
+    /* width: 50%;*/
+  }
+}
+@media screen and (max-width: 475px) {
   body header nav div h1 {
     font-size: 1rem;
   }
@@ -449,6 +511,12 @@ body footer a .miwhsap {
   body main .galeria-notas .item-nota h3 {
     font-size: 0.5rem;
   }
+  /* Pagina Mis opciones */
+  body main .alternativas .item-alternativa-ul div ul {
+    font-size: 10px;
+    line-height: 2;
+    /* width: 50%;*/
+  }
 }
 @media screen and (max-width: 400px) {
   body header nav div {
@@ -466,6 +534,12 @@ body footer a .miwhsap {
   }
   body main .galeria-notas .item-nota h3 {
     font-size: 0.4rem;
+  }
+  /* Pagina Mis opciones */
+  body main .alternativas .item-alternativa-ul div ul {
+    font-size: 9px;
+    line-height: 2;
+    /* width: 50%;*/
   }
 }
 

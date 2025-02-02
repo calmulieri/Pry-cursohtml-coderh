@@ -1,32 +1,56 @@
 /* formatos responsive  sector medias*/
 
-@media screen and (max-width:980px){
+@media screen and (max-width:980px) {
     body main .sobre-nosotros {
         width: 100vw;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-    body main .sobre-nosotros div{
+
+    body main .sobre-nosotros div {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-       /* height: auto;*/
+        /* height: auto;*/
     }
-    body main .sobre-nosotros img{
+
+    body main .sobre-nosotros img {
         padding: 0.2rem;
         width: 100%;
     }
-    body main .sobre-nosotros div .nosotros-parrafos{
+
+    body main .sobre-nosotros div .nosotros-parrafos {
         width: 100%;
     }
-    body main .sobre-nosotros div .nosotros-parrafos-ul{
+
+    body main .sobre-nosotros div .nosotros-parrafos-ul {
         width: 100%;
+    }
+
+    /* Page Mis opciones */
+    body main .alternativas .item-alternativa-ul {
+        height: 300;
+    }
+
+    body main .alternativas .item-alternativa-ul .ebok-boton img {
+    }
+
+    body main .alternativas .item-alternativa-ul div ul {
+        font-size: 16px;
+        line-height: 2;
+        /* width: 50%;*/
     }
 }
 
 @media screen and (max-width:900px) {
+
+    body main .nutrirse div img {
+        /* width: 100%;
+        height: 15rem;
+        object-fit: cover;*/
+    }
 
     body main .galeria-notas .item-nota img {
         width: 250px;
@@ -43,7 +67,8 @@
 @media screen and (max-width:770px) {
 
     body main .galeria-notas .item-nota img {
-        width: 200px;
+
+        width: 220px;
         height: auto;
 
     }
@@ -82,6 +107,9 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        font-size: 1rem;
+    }
+    body main .animate .tith2 h2{
         font-size: 1rem;
     }
 
@@ -138,9 +166,45 @@
 
     }
 
+    /*Pagina Mis  Opciones */
+    body main .alternativas .item-alternativa-ul .ebok-boton img {
+    }
+
+    body main .alternativas .item-alternativa-ul div ul {
+        font-size: 14px;
+        line-height: 2;
+        /* width: 50%;*/
+    }
+
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:565px) {
+
+    body main .animate .tith2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.2rem;
+    }
+    body main .animate .titresto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 0.6rem;
+        flex-wrap: wrap;
+        } 
+    /*Pagina Mis  Opciones */
+    body main .alternativas .item-alternativa-ul .ebok-boton img {
+    }
+
+    body main .alternativas .item-alternativa-ul div ul {
+        font-size: 12px;
+        line-height: 2;
+        /* width: 50%;*/
+    }
+    }
+
+@media screen and (max-width:475px) {
     body header nav div h1 {
         font-size: 1rem;
     }
@@ -164,12 +228,21 @@
     body main .galeria-notas {
         margin-top: 0.5rem;
         /*grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;*/
+grid-template-rows: 1fr 1fr;*/
         gap: 0rem;
     }
 
     body main .galeria-notas .item-nota h3 {
         font-size: 0.5rem;
+    }
+    /* Pagina Mis opciones */
+    body main .alternativas .item-alternativa-ul .ebok-boton img {
+    }
+
+    body main .alternativas .item-alternativa-ul div ul {
+        font-size: 10px;
+        line-height: 2;
+        /* width: 50%;*/
     }
 }
 
@@ -193,5 +266,15 @@
 
     body main .galeria-notas .item-nota h3 {
         font-size: 0.4rem;
+    }
+
+    /* Pagina Mis opciones */
+    body main .alternativas .item-alternativa-ul .ebok-boton img {
+    }
+
+    body main .alternativas .item-alternativa-ul div ul {
+        font-size: 9px;
+        line-height: 2;
+        /* width: 50%;*/
     }
 }
