@@ -120,9 +120,6 @@ body {
         .alternativas {
             display: flex;
             flex-direction: column;
-            /* align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;*/
             /*gap: 10px;
             /* Espaciado entre elementos */
             padding: 5px;
@@ -132,11 +129,6 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                /* Centra horizontalmente */
-                /*align-items: center; /* Centra verticalmente */
-                /*padding: 10px;
-                /*max-width: 1200px;
-                /* Para que no sean demasiado anchos */
                 height: auto;
                 overflow: hidden;
 
@@ -169,11 +161,12 @@ body {
 
                     img {
                         height: auto;
-                        object-fit:contain;
+                        object-fit: contain;
                         flex-wrap: wrap;
                     }
-                    .btn btn-success{
-                        width:200px;
+
+                    .btn btn-success {
+                        width: 200px;
                         height: auto;
 
                     }
@@ -287,7 +280,7 @@ body {
             flex-direction: row;
 
             div {
-                width: 50%;
+                width: 40%;
 
                 img {
                     width: 100%;
@@ -301,7 +294,7 @@ body {
             .form-envio {
                 background-color: azure;
                 border: 1px solid green;
-                width: 50%;
+                width: 60%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;

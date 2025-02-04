@@ -150,9 +150,6 @@ body main .tit-info-interes {
 body main .alternativas {
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;*/
   /*gap: 10px;
   /* Espaciado entre elementos */
   padding: 5px;
@@ -161,11 +158,6 @@ body main .alternativas .item-alternativa-ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* Centra horizontalmente */
-  /*align-items: center; /* Centra verticalmente */
-  /*padding: 10px;
-  /*max-width: 1200px;
-  /* Para que no sean demasiado anchos */
   height: auto;
   overflow: hidden;
 }
@@ -283,7 +275,7 @@ body main .galeria-contacto {
   flex-direction: row;
 }
 body main .galeria-contacto div {
-  width: 50%;
+  width: 40%;
 }
 body main .galeria-contacto div img {
   width: 100%;
@@ -295,7 +287,7 @@ body main .galeria-contacto div img {
 body main .galeria-contacto .form-envio {
   background-color: azure;
   border: 1px solid green;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -366,11 +358,6 @@ body footer a .miwhsap {
   }
 }
 @media screen and (max-width: 900px) {
-  body main .nutrirse div img {
-    /* width: 100%;
-    height: 15rem;
-    object-fit: cover;*/
-  }
   body main .galeria-notas .item-nota img {
     width: 250px;
     height: auto;
@@ -463,6 +450,32 @@ body footer a .miwhsap {
     line-height: 2;
     /* width: 50%;*/
   }
+  /*Pagina Contactos*/
+  body main .galeria-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .galeria-contacto div {
+    width: 100%;
+  }
+  body main .galeria-contacto div img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: contain;
+    flex-wrap: wrap;
+  }
+  body main .galeria-contacto .form-envio {
+    background-color: azure;
+    border: 1px solid green;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 565px) {
   body main .animate .tith2 {
@@ -539,7 +552,6 @@ body footer a .miwhsap {
   body main .alternativas .item-alternativa-ul div ul {
     font-size: 9px;
     line-height: 2;
-    /* width: 50%;*/
   }
 }
 
