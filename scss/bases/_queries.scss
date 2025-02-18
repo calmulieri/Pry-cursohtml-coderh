@@ -219,6 +219,9 @@
 
     /*Pagina Mis  Opciones */
 
+    body main .alternativas .item-alternativa-ul .ebok-boton{
+        padding: 20px;
+    }
     body main .alternativas .item-alternativa-ul div ul {
         font-size: 12px;
         line-height: 2;
@@ -259,6 +262,10 @@ grid-template-rows: 1fr 1fr;*/
     }
 
     /* Pagina Mis opciones */
+
+    body main .alternativas .item-alternativa-ul .ebok-boton{
+        padding: 2px;
+    }
 
     body main .alternativas .item-alternativa-ul div ul {
         font-size: 10px;

@@ -183,6 +183,7 @@ body main .alternativas .item-alternativa-ul .ebok-boton {
   flex-direction: column;
   width: 50%;
   justify-content: center;
+  padding: 30px;
 }
 body main .alternativas .item-alternativa-ul .ebok-boton img {
   height: auto;
@@ -492,6 +493,9 @@ body footer a .miwhsap {
     flex-wrap: wrap;
   }
   /*Pagina Mis  Opciones */
+  body main .alternativas .item-alternativa-ul .ebok-boton {
+    padding: 20px;
+  }
   body main .alternativas .item-alternativa-ul div ul {
     font-size: 12px;
     line-height: 2;
@@ -525,6 +529,9 @@ body footer a .miwhsap {
     font-size: 0.5rem;
   }
   /* Pagina Mis opciones */
+  body main .alternativas .item-alternativa-ul .ebok-boton {
+    padding: 2px;
+  }
   body main .alternativas .item-alternativa-ul div ul {
     font-size: 10px;
     line-height: 2;
